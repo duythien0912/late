@@ -1,0 +1,169 @@
+@charset "UTF-8";
+.os-custom-field-form {
+  position: relative; }
+  .os-custom-field-form + .os-custom-field-form {
+    margin-top: 15px; }
+  .os-custom-field-form .os-form-message-w.status-success {
+    display: none; }
+  .os-custom-field-form .os-remove-custom-field {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transform: translate(50%, -50%);
+    font-size: 14px;
+    color: #38406d;
+    text-decoration: none;
+    padding: 0px 2px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 10px 30px 0 rgba(115, 125, 146, 0.11), 0 1px 2px 0 rgba(160, 170, 185, 0.6);
+    text-align: center;
+    display: none; }
+    .os-custom-field-form .os-remove-custom-field:hover {
+      color: #dc5858;
+      transform: translate(50%, -50%); }
+    .os-custom-field-form .os-remove-custom-field i {
+      vertical-align: middle;
+      line-height: 22px;
+      display: block; }
+    .os-custom-field-form .os-remove-custom-field.os-loading:after {
+      display: block;
+      content: "";
+      width: 19px;
+      height: 19px;
+      border-bottom: 2px solid #dc5858;
+      border-left: 2px solid #dc5858;
+      border-top: 2px solid #dc5858;
+      border-right: 2px solid rgba(255, 255, 255, 0);
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: os-loading 700ms infinite linear; }
+    .os-custom-field-form .os-remove-custom-field.os-loading i {
+      color: transparent; }
+  .os-custom-field-form:hover .os-remove-custom-field {
+    display: block; }
+  .os-custom-field-form:hover .os-custom-field-form-info .os-custom-field-edit-btn {
+    opacity: 1; }
+  .os-custom-field-form .os-custom-field-form-info {
+    display: flex;
+    cursor: pointer;
+    align-items: center; }
+    .os-custom-field-form .os-custom-field-form-info:hover .os-custom-field-name {
+      color: #0937ff; }
+    .os-custom-field-form .os-custom-field-form-info.os-custom-field-required .os-custom-field-type:after {
+      position: absolute;
+      content: "*";
+      color: #BC0000;
+      top: 50%;
+      right: -15px;
+      transform: translateY(-50%);
+      line-height: 1;
+      font-size: 18px;
+      display: block; }
+    .os-custom-field-form .os-custom-field-form-info .os-custom-field-drag {
+      font-size: 16px;
+      padding: 5px;
+      padding-left: 0px;
+      color: #0937ff;
+      margin-right: 10px;
+      line-height: 1;
+      cursor: -moz-grab;
+      cursor: -webkit-grab;
+      cursor: grab; }
+      .os-custom-field-form .os-custom-field-form-info .os-custom-field-drag:before {
+        font-family: 'latepointadmin' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: ""; }
+    .os-custom-field-form .os-custom-field-form-info .os-custom-field-name {
+      margin-right: 10px;
+      font-size: 19px;
+      font-weight: 500; }
+    .os-custom-field-form .os-custom-field-form-info .os-custom-field-type {
+      color: #8894AF;
+      position: relative; }
+    .os-custom-field-form .os-custom-field-form-info .os-custom-field-edit-btn {
+      margin-left: auto;
+      font-size: 16px;
+      color: #0937ff;
+      opacity: 0.4; }
+  .os-custom-field-form .os-custom-field-form-params {
+    display: none;
+    padding-top: 20px;
+    margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05); }
+  .os-custom-field-form .os-custom-field-form-i {
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 30px 0 rgba(115, 125, 146, 0.11), 0 1px 2px 0 rgba(160, 170, 185, 0.6);
+    border-radius: 3px; }
+    .os-custom-field-form .os-custom-field-form-i .os-form-group {
+      margin-bottom: 20px; }
+      .os-custom-field-form .os-custom-field-form-i .os-form-group:first-child {
+        flex: 1; }
+  .os-custom-field-form.os-is-editing .os-custom-field-form-params {
+    display: block; }
+
+.os-default-fields {
+  margin-bottom: 40px; }
+
+.os-default-field {
+  padding: 10px 15px 10px 15px;
+  background-color: #fff;
+  box-shadow: 0 10px 30px 0 rgba(115, 125, 146, 0.11), 0 1px 2px 0 rgba(160, 170, 185, 0.6);
+  border-radius: 3px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center; }
+  .os-default-field .locked-field {
+    padding: 0px 3px;
+    color: #444656;
+    font-size: 17px;
+    border-radius: 10px;
+    position: relative; }
+    .os-default-field .locked-field span {
+      display: none;
+      transform: translate(0%, -110%);
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      min-width: 300px;
+      max-width: 350px;
+      background-color: #2a335d;
+      color: #fff;
+      padding: 15px;
+      font-size: 14px; }
+    .os-default-field .locked-field:hover span {
+      display: block; }
+  .os-default-field .os-field-setting {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid rgba(0, 0, 0, 0.05); }
+  .os-default-field .os-form-group {
+    margin: 0px; }
+  .os-default-field .os-field-name {
+    margin-right: auto;
+    margin-left: 13px;
+    font-weight: 500;
+    font-size: 19px;
+    padding: 8px 15px;
+    margin-left: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1); }
+  .os-default-field.is-disabled {
+    opacity: 0.5; }
+    .os-default-field.is-disabled .os-field-setting {
+      display: none; }
+
+/*# sourceMappingURL=latepoint-custom-fields-admin.css.map */
