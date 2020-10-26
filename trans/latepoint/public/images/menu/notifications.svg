@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30.849" height="30.849" viewBox="0 0 30.849 30.849">
-  <path id="Icon_metro-notification" data-name="Icon metro-notification" d="M17.995,4.82a12.532,12.532,0,1,0,8.862,3.671A12.45,12.45,0,0,0,17.995,4.82Zm0-2.892A15.424,15.424,0,1,1,2.571,17.352,15.424,15.424,0,0,1,17.995,1.928ZM16.067,23.136h3.856v3.856H16.067Zm0-15.424h3.856V19.28H16.067Z" transform="translate(-2.571 -1.928)" fill="#4a7c59"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="30.849" height="30.849" viewBox="0 0 30.849 30.849"><path id="Icon_metro-notification" fill="#4a7c59" d="M17.995,4.82a12.532,12.532,0,1,0,8.862,3.671A12.45,12.45,0,0,0,17.995,4.82Zm0-2.892A15.424,15.424,0,1,1,2.571,17.352,15.424,15.424,0,0,1,17.995,1.928ZM16.067,23.136h3.856v3.856H16.067Zm0-15.424h3.856V19.28H16.067Z" data-name="Icon metro-notification" transform="translate(-2.571 -1.928)"/></svg>
